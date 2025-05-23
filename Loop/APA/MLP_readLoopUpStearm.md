@@ -143,14 +143,14 @@ NR > 1 {
 ### Step6：根据 log2FC 分为上调和下调 loops，输出 .bedpe
 ```
  awk 'NR == 1 { next }
-> {
->     split($1, parts, "__");
->     split(parts[1], a, "[:-]");
->     split(parts[2], b, "[:-]");
->     if ($4 >= 1)
->         print a[1], a[2], a[3], b[1], b[2], b[3] >> "old.loop.bedpe";
->     else if ($4 <= -1)
->         print a[1], a[2], a[3], b[1], b[2], b[3] >> "young.loop.bedpe";
-> }' loop_count_matrix_log2FC_gt1.txt
+{
+split($1, parts, "__");
+split(parts[1], a, "[:-]");
+split(parts[2], b, "[:-]");
+if ($4 >= 1)
+print a[1], a[2], a[3], b[1], b[2], b[3] >> "old.loop.bedpe";
+else if ($4 <= -1)
+print a[1], a[2], a[3], b[1], b[2], b[3] >> "young.loop.bedpe";
+}' loop_count_matrix_log2FC_gt1.txt
 
 ```
