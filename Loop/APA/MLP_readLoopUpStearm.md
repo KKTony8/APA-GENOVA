@@ -124,6 +124,8 @@ END {
 rm -f all_counts.tsv
 ```
 ### Step5：均一化使得年轻的coun总和和年老的count的总和一样，计算 log2FC 并筛选差异 loops（|log2FC| > 1）
+
+> 使用的是CPM而不是obs/exp进行norm
 ``` 
 awk 'BEGIN {
     total1 = 5392163;
