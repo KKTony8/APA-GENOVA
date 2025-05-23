@@ -1,6 +1,6 @@
 ## 2025-05-23 17:30
 library(GENOVA)
-
+### 需要看一下前面的代码
 # 路径设定
 shared_loop_bedpe <- "/data5/Wuky/CHIFQ/software/YOResult/itx/loops_bedpe/old.loop.bedpe"
 young_mcool_path  <- "/data5/Wuky/CHIFQ/software/YOResult/hic60/mcool/yHSC-4.mcool"
