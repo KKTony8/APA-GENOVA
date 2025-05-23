@@ -69,7 +69,7 @@ done
 echo "指定样本的配对处理完成，结果保存在 $OUTPUT_DIR"
 ```
 
-###Step 4: 构建 count 矩阵
+### Step 4: 构建 count 矩阵
 ```
 # 1. 指定需要合并的两个文件
 files=("oHSC-78.reads_in_loops.txt" "yHSC-4.reads_in_loops.txt")
@@ -118,12 +118,13 @@ END {
         print ""
     }
 }' all_counts.tsv >> loop_count_matrix.txt
-```
-# 5. 删除中间文件
-```
-rm -f all_counts.tsv
 
-###Step5：均一化使得年轻的coun总和和年老的count的总和一样，计算 log2FC 并筛选差异 loops（|log2FC| > 1）
+# 5. 删除中间文件
+
+rm -f all_counts.tsv
+```
+### Step5：均一化使得年轻的coun总和和年老的count的总和一样，计算 log2FC 并筛选差异 loops（|log2FC| > 1）
+``` 
 awk 'BEGIN {
     total1 = 5392163;
     total2 = 4676031;
