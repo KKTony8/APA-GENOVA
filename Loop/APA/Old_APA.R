@@ -6,7 +6,7 @@ shared_loop_bedpe <- "/data5/Wuky/CHIFQ/software/YOResult/itx/loops_bedpe/old.lo
 young_mcool_path  <- "/data5/Wuky/CHIFQ/software/YOResult/hic60/mcool/yHSC-4.mcool"
 old_mcool_path    <- "/data5/Wuky/CHIFQ/software/YOResult/hic60/mcool/oHSC-78.mcool"
 
-### 读取mcool文件之前需要计算每个分辨率的权重，正常！！！
+### 21:10 2025/5/26 读取mcool文件之前需要计算每个分辨率的权重，正常！！！
 ##conda activate cooler_env
 #hic2cool convert yHSC5.hic yHSC5.mcool -r 0
 #cooler balance /data5/Wuky/CHIFQ/software/YOResult/hic60/mcool/oHSC-7.mcool::/resolutions/10000
