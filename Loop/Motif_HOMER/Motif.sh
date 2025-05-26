@@ -1,3 +1,4 @@
+21:05 2025/5/26
 ###1. 下载和安装HOMER
 wget http://homer.ucsd.edu/homer/configureHomer.pl
 perl configureHomer.pl --install
