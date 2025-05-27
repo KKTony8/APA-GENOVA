@@ -6,5 +6,6 @@
 ## 使用软件
 1. https://github.com/robinweide/GENOVA
 2. https://hicexplorer.readthedocs.io/en/latest/
-3. https://bedtools.readthedocs.io/en/latest/content/tools/pairtopair.html
+3. LOOP：https://bedtools.readthedocs.io/en/latest/content/tools/pairtopair.html
+4. Motif：http://homer.ucsd.edu/homer/motif/
 
