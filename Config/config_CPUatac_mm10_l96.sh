@@ -1,5 +1,8 @@
-###10:42 2025/5/28
-#!/bin/bash
+### 10:42 2025/5/28
+## /data5/Wuky/CHIFQ/ref/mm10/bwa/mm10.blacklist.bed
+## /data5/Wuky/CHIFQ/ref/mm10/bwa/mm10.fa
+
+# !/bin/bash
 ## Config file for CPU pipeline
 
 ## 定义参考基因组的位置（fasta）
