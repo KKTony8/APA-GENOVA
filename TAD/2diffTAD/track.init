@@ -43,28 +43,7 @@ border_color = black
 color = none
 overlay_previous = share-y
 
-# ==================== Track 3: Rejected Differential TADs ====================
-[hic for rejected diffTAD]
-file = /data5/Wuky/CHIFQ/software/YOResult/hic60/mcool/oHSC-8.mcool::resolutions/25000
-title = oHSC-8 (for rejected diffTADs)
-file_type = hic_matrix
-colormap = Spectral_r
-transform = log1p
-depth = 2000000
-min_value = 1
-max_value = 20
-show_masked_bins = false
-height = 10
-
-[tad differential rejected]
-file = /data5/Wuky/CHIFQ/software/YOResult/hic60/TADnew2/TADdiff/oHSC_vs_yHSC_diffTAD_rejected.diff_tad
-title = Rejected Differential TADs
-file_type = domains
-border_color = black
-color = green
-overlay_previous = share-y
-
-# ==================== Track 4: Accepted Differential TADs ====================
+# ==================== Track 3: Accepted Differential TADs ====================
 [hic for accepted diffTAD]
 file = /data5/Wuky/CHIFQ/software/YOResult/hic60/mcool/oHSC-8.mcool::resolutions/25000
 title = oHSC-8 (for accepted diffTADs)
@@ -80,6 +59,27 @@ height = 10
 [tad differential accepted]
 file = /data5/Wuky/CHIFQ/software/YOResult/hic60/TADnew2/TADdiff/oHSC_vs_yHSC_diffTAD_accepted.diff_tad
 title = Accepted Differential TADs
+file_type = domains
+border_color = black
+color = green
+overlay_previous = share-y
+
+# ==================== Track 4: Rejected Differential TADs ====================
+[hic for rejected diffTAD]
+file = /data5/Wuky/CHIFQ/software/YOResult/hic60/mcool/oHSC-8.mcool::resolutions/25000
+title = oHSC-8 (for rejected diffTADs)
+file_type = hic_matrix
+colormap = Spectral_r
+transform = log1p
+depth = 2000000
+min_value = 1
+max_value = 20
+show_masked_bins = false
+height = 10
+
+[tad differential rejected]
+file = /data5/Wuky/CHIFQ/software/YOResult/hic60/TADnew2/TADdiff/oHSC_vs_yHSC_diffTAD_rejected.diff_tad
+title = Rejected Differential TADs
 file_type = domains
 border_color = black
 color = red
